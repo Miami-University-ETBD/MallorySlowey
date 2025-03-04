@@ -1,0 +1,157 @@
+/*index - homepage, about me*/
+
+body { 
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f5eef8;
+    color: #4a235a;
+}
+.header {
+    background: #4a235a;
+    color: white;
+    padding: 100px 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+.menu, .gallery, .about {
+    padding: 20px;
+    background: #fff;
+    border: 5px solid black;
+    margin: 20px;
+    border-radius: 15px;
+    font-size: 1.2em;
+}
+.checkered {
+    background: repeating-linear-gradient(
+        45deg,
+        #fff,
+        #fff 10px,
+        #4a235a 10px,
+        #4a235a 20px
+    );
+    padding: 30px;
+    position: relative;
+}
+.checkered h2, .checkered .treats {
+    position: relative;
+    z-index: 2;
+    background: rgba (255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.treats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.treat {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+aside {
+    background: #f8e8ff;
+    font-style: italic;
+}
+
+footer {
+    background: #4a235a;
+    color: white;
+    padding: 20px;
+    font-size: 1em;
+}
+
+
+/*content - pricing*/
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f5eef8;
+    color: #4a235a;
+}
+
+header {  background: #4a235a;
+    color: white;
+    padding: 15px;
+    font-size: 1.8em;
+    font-weight: bold;
+
+}
+
+section, aside { 
+    padding: 20px;
+    background: #fff;
+    border: 5px solid black;
+    margin: 20px;
+    border-radius: 15px;
+    font-size: 1.2em;
+    position: relative;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th,td {
+    border: 2px solid #4a235a;
+    padding: 10px;
+    text-align: center;
+}
+
+th{
+    background-color: #4a235a;
+    color: white;
+}
+
+ul{ 
+    list-style-type: square;
+    text-align: left;
+    display: inline-block;
+    margin: 10px auto;
+}
+
+footer {
+    background: #4a235a;
+    color: white;
+    padding: 15px;
+    font-size: 1em;
+}
+
+
+/*contact - about Jill*/ 
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f5eef8;
+    color: #4a235a;
+}
+
+header {  background: #4a235a;
+    color: white;
+    padding: 15px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+    section { 
+        padding: 20px;
+        background: #fff;
+        border: 5px solid black;
+        margin: 20px;
+        border-radius: 15px;
+        font-size: 1.2em;
+        position: relative;
+ }
