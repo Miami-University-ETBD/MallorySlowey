@@ -10,6 +10,14 @@
     </head>
 
 <body> 
+
+    <div class="navbar"> 
+            
+        <a href="index.html">Bakery Home</a>
+        <a href="content.html">Baked Goods</a>
+        <a href="contact.html">About Jill</a>
+    </div>
+
     <header> Jilly Bean Bakery - Pricing </header>
 
     <section> 
@@ -61,8 +69,27 @@
                 <li>Specify any dietary preferences or special requests.</li>
                 <li>We will confirm your order and arrange pickup or delivery via email.</li>
             </ul>
-            <p>We recommend placing large orders at least *48 hours in advance* to ensure freshness.</p>
+            <p>We recommend placing large orders at least <em>*48 hours in advance*</em> to ensure freshness.</p>
+        
+            <h2>Enter your phone number here to be entered into our monthly cookie drawing!</h2>
+            <input id="userInput"> <br><br>
+            <button
+            onclick="myFunction()">Submit</button>
+            <p id="message"></p>
+            <script>function myFunction() { 
+                let userInput = 
+            document.querySelector
+            ("#userInput");
+                let message =
+            document.querySelector
+            ("#message");
+                message.innerHTML = "Thank you for entering our drawing" +  userInput.value;
+            }
+            
+        
+            </script>
         </section>
+
         <footer>
             2025 Jilly Bean Bakery | Contact us at orders@jillybeanbakery.com
         </footer>
