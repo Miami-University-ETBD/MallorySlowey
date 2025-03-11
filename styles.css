@@ -68,6 +68,24 @@ footer {
     font-size: 1em;
 }
 
+.navbar {
+    background-color: #f8e8ff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+.navbar a {
+display: inline-block;
+color:#4a235a;
+text-decoration: none;
+font-size:medium;
+font-weight: bold;
+padding: 10px 20px;
+
+}
+
+
 
 /*content - pricing*/
 
@@ -154,4 +172,9 @@ header {  background: #4a235a;
         border-radius: 15px;
         font-size: 1.2em;
         position: relative;
+ }
+
+
+ a {
+    color:white;
  }

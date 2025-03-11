@@ -10,6 +10,14 @@
     </head>
 
     <body> 
+
+        <div class="navbar"> 
+            
+            <a href="index.html">Bakery Home</a>
+            <a href="content.html">Baked Goods</a>
+            <a href="contact.html">About Jill</a>
+        </div>
+
         <header>Meet the Baker - Jilly Bean Bakery</header>
 
         <section>
@@ -21,7 +29,7 @@
 
         <section>
             <h2>Jill's Baking Philosophy</h2>
-            <p>At Jilly Bean Bakery, we believe that great baking starts with the best ingredients and a touch of love. Our philosophy is simple: </p>
+            <p>At Jilly Bean Bakery, we believe that great baking starts with the best ingredients and a touch of love. <u>Our philosophy is simple</u>: </p>
             <ul>
                 <li>Use fresh, natural ingredients - No artificial preservatives.</li>
                 <li>Stick to family recipes passed down through generations.</li>
@@ -33,8 +41,61 @@
 
     
         </section>
+
+        <section>
+            <h2>Jill’s Favorite Baked Goods</h2>
+            <table border="1">
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Chocolate Chip Cookies</td>
+                    <td>Classic, soft, and packed with chocolate chips.</td>
+                </tr>
+                <tr>
+                    <td>Banana Bread</td>
+                    <td>Moist, sweet, and made with ripe bananas.</td>
+                </tr>
+                <tr>
+                    <td>Chocolate Pretzel Bites</td>
+                    <td>Sweet and salty, coated in rich chocolate.</td>
+                </tr>
+                <tr>
+                    <td>New York Cheesecake</td>
+                    <td>Creamy and decadent, with a buttery graham cracker crust.</td>
+                </tr>
+            </table>
+
+            <h2>Help us select our next best seller!</h2>
+            <script>
+            function getOption() {
+            var obj = 
+            document.getElementById("mySelect");
+            document.getElementById("demo").innerHTML =
+            obj.options[obj.selectedIndex].text;
+            }
+            </script>
+
+            <form>
+                Select the treat that sounds the best:
+                <select id="mySelect">
+                    <option>Red Velvet Cupcakes</option>
+                    <option>Apple Pie</option>
+                    <option>Gooey Cosmic Brownies</option>
+                    <option>Peanut Butter Cookies</option>
+                </select>
+                <br><br>
+                <input type="button"
+            onclick="getOption()"
+            value="Submit!">
+            </form>
+            <p id="demo"></p>
+            
+        </section>
+
         <footer>
-            2025 Jilly Bean Bakery | Contact us at orders@jillybeanbakery.com
+            2025 Jilly Bean Bakery | Contact us at orders@jillybeanbakery.com | <a href="https://www.nationaldayarchives.com/day/national-cookie-day/" >National Cookie Day -- Learn More!</a>
         </footer>
     </body>
     </html>
