@@ -24,15 +24,8 @@ body {
     font-size: 1.2em;
 }
 .checkered {
-    background: repeating-linear-gradient(
-        45deg,
-        #fff,
-        #fff 10px,
-        #4a235a 10px,
-        #4a235a 20px
-    );
-    padding: 30px;
-    position: relative;
+    background: white;
+    
 }
 .checkered h2, .checkered .treats {
     position: relative;
@@ -49,7 +42,7 @@ body {
     flex-wrap: wrap;
 }
 .treat {
-    background: white;
+    background: #f5eef8;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
