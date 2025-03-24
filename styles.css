@@ -170,4 +170,15 @@ header {  background: #4a235a;
 
  a {
     color:white;
- }
+
+ 
+    }
+ 
+
+.custom-circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+

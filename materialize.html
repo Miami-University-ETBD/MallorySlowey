@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Jilly Bean Bakery</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <style>
+       .header-bg {
+           background-color: #4a235a; /* Light pink background */
+       }
+       .section-bg {
+           background-color: #f0e2fc; /* Light orange background */
+       }
+       .shadow {
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       }
+       .table-header {
+           background-color: #4a235a; /* Light red background */
+           color: white;
+       }
+   </style>
+</head>
+<body>
+
+
+   <!-- Navbar -->
+   <nav class="header-bg">
+       <div class="nav-wrapper">
+<ul>
+   <li><a href="index.html">Bakery Home</a></li>
+   <li> <a href="content.html">Baked Goods</a></li>
+  <li> <a href="contact.html">About Jill</a></li>
+ <li><a href="materialize.html">Materialize</a></li>           
+           </ul>
+       </div>
+   </div>
+   </nav>
+   
+
+
+
+   <!-- Header Section -->
+   <div class="section header-bg center-align">
+       <h1 class="white-text">Welcome to Jilly Bean Bakery</h1>
+       <p class="white-text">Sweet Moments, Freshly Baked! 🍰✨</p>
+   </div>
+
+
+   <!-- About Us Section -->
+   <div id="about" class="section section-bg">
+       <div class="container">
+           <div class="row">
+               <div class="col s12 m6">
+              
+                   <h2>About Us</h2>
+                   <p>Jilly Bean Bakery is more than just a bakery-it's a place where tradition meets taste. With a passion for baking that started in her grandmother's kitchen, Jill is bringing freash, homemade treats to your table. every cookie, bread, snack is made from scratch , esuring high quality and love in every bite. </p>
+               <div class="col s12 m6">
+                   <img src="images/Screen Shot 2025-03-10 at 7.53.27 PM.png" alt="Bakery Image" class="responsive-img shadow">
+               </div>
+           </div>
+       </div>
+   </div>
+
+
+   <!-- Menu Section -->
+   <div id="menu" class="section">
+       <div class="container">
+           <h2>Customer Favorites</h2>
+           <table class="highlight">
+               <thead class="table-header">
+                   <tr>
+                       <th>Item</th>
+                       <th>Description</th>
+                       <th>Price</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td>Chocolate Chip Cookies</td>
+                       <td>Classic, soft, and packed with chocolate chips.</td>
+                       <td>$4.00</td>
+                   </tr>
+                   <tr>
+                       <td>Chocolate Pretzel Bites</td>
+                       <td>Sweet and salty, coated in rich chocolate.</td>
+                       <td>$3.00</td>
+                   </tr>
+                   <tr>
+                       <td>Puppy Chow</td>
+                       <td>Sweet and crunchy snack made from crispy rice cereal coated in a rich mixture of melted chocolate, peanut butter, and butter, then tossed in powdered sugar.</td>
+                       <td>$2.50</td>
+                   </tr>
+                   <tr>
+                       <td>Banana Bread</td>
+                       <td>Moist, sweet, and made with ripe bananas.</td>
+                       <td>$3.50</td>
+                   </tr>
+               </tbody>
+           </table>
+       </div>
+   </div>
+   <div class="row">
+
+
+       <div class="col s4">
+           <img src="images/chocochip.JPEG" alt="Bakery Image" class="responsive-img shadow">
+           <blockquote>Fresh Cookies</blockquote>
+       </div>
+       <div class="col s4">
+           <img src="images/perfectcookies.png" alt="Bakery Image" class="responsive-img shadow">
+           <blockquote>We Love Cookies</blockquote>
+       </div>
+       <div class="col s4">
+           <img src="images/italycheesecake.PNG" alt="Bakery Image" class="responsive-img shadow">
+           <blockquote>Especially Cheesecake</blockquote>
+       </div>
+      </div>
+   <!-- Contact Section -->
+   <div id="contact" class="section section-bg">
+       <div class="container">
+           <h2>Contact Us</h2>
+           <div class="row">
+               <div class="col s12 m6">
+                   <form>
+                       <div class="input-field">
+                           <input id="name" type="text" class="validate">
+                           <label for="name">Name</label>
+                       </div>
+                       <div class="input-field">
+                           <input id="email" type="email" class="validate">
+                           <label for="email">Email</label>
+                       </div>
+                       <div class="input-field">
+                           <textarea id="message" class="materialize-textarea"></textarea>
+                           <label for="message">Message</label>
+                       </div>
+                       <button type="submit" class="btn waves-effect waves-light">Send</button>
+                   </form>
+               </div>
+               <div class="col s12 m6">
+                   <h5>Visit Us</h5>
+                   <p>123 King St,<br> Charleston, SC 12345</p>
+                   <p><i class="material-icons">phone</i> (123) 456-7890</p>
+                   <p><i class="material-icons">email</i> orders@jillybeanbakery.com</p>
+               </div>
+           </div>
+       </div>
+   </div>
+
+
+   <!-- Footer -->
+   <footer class="page-footer header-bg">
+       <div class="container">
+           <div class="row">
+               <div class="col s12 center-align">
+                   <p class="white-text">&copy; 2025 Jilly Bean Bakery. All rights reserved.</p>
+               </div>
+           </div>
+       </div>
+   </footer>
+</body>
+</html>
