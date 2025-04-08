@@ -4,8 +4,8 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Jilly Bean Bakery</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <style>
        .header-bg {
            background-color: #4a235a; /* Light pink background */
@@ -27,12 +27,13 @@
 
    <!-- Navbar -->
    <nav class="header-bg">
-       <div class="nav-wrapper">
-<ul>
-   <li><a href="index.html">Bakery Home</a></li>
-   <li> <a href="content.html">Baked Goods</a></li>
-  <li> <a href="contact.html">About Jill</a></li>
- <li><a href="materialize.html">Materialize</a></li>           
+       <div class="nav-wrapper container">
+        <a href="a" class="brand-logo">The Bakery</a>
+<ul id="nav-mobile" class="right hide-on-med-and-down">
+   <li><a href="#about">About us</a></li>
+   <li> <a href="#menu">Menu</a></li>
+  <li> <a href="#contact">Contact</a></li>
+      
            </ul>
        </div>
    </div>
@@ -63,6 +64,16 @@
        </div>
    </div>
 
+<div class="container center-align">
+   <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="images/easter.png"></a>
+    <a class="carousel-item" href="#two!"><img src="images/momspread.JPEG"></a>
+    <a class="carousel-item" href="#three!"><img src="images/donutsyay.png"></a>
+    <a class="carousel-item" href="#four!"><img src="images/puppychowchat.png"></a>
+    <a class="carousel-item" href="#five!"><img src="images/pastrychat.png"></a>
+</div>
+  </div>
+      
 
    <!-- Menu Section -->
    <div id="menu" class="section">
@@ -116,6 +127,81 @@
            <img src="images/italycheesecake.PNG" alt="Bakery Image" class="responsive-img shadow">
            <blockquote>Especially Cheesecake</blockquote>
        </div>
+
+       <!--FAQ -->
+    <div class="container"
+    <h2>FAQ</h2>
+       <ul class="collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">business</i>When are you open?</div>
+          <div class="collapsible-body"><span>We're open Monday to Saturday, 8 AM to 6 PM.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">directions_car</i>Do you offer delivery?</div>
+          <div class="collapsible-body"><span>Yes! We deliver locally within Charleston.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">cake</i>Are your products nut-free?</div>
+          <div class="collapsible-body"><span>Some are! Please check the item description or ask us directly.</span></div>
+        </li>
+      </ul>
+      </div>
+
+      <!--RADIO-->
+
+      <div id="radio-section" class="section container">
+        <h2>Select Your Favorite Pastry!</h2>
+        <form>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="Croissant" onclick="displayPastry()"/>
+                    <span>Croissant</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="Cookie" onclick="displayPastry()"/>
+                    <span>Cookie</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="Donut" onclick="displayPastry()"/>
+                    <span>Donut</span>
+                </label>
+            </p>
+        </form>
+        <div id="pastry-response"></div>
+    </div>
+ 
+
+
+<!-- Email Feedback Section -->
+<div id="feedback-section" class="section container">
+    <h2>Subscribe for Updates</h2>
+    <form onsubmit="submitEmail(event)">
+        <div class="input-field">
+            <input id="email" type="email" required>
+            <label for="email">Email</label>
+        </div>
+        <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
+    </form>
+    <div id="email-response"></div>
+</div>
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Check Your email-response</h4>
+    <p id="modal-content-text"></p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+      >Close</a
+    >
+  </div>
+</div>
+
+
+      
       </div>
    <!-- Contact Section -->
    <div id="contact" class="section section-bg">
@@ -160,5 +246,56 @@
            </div>
        </div>
    </footer>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+
+<!---new code -->
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        var carouselElems= document.querySelectorAll('.carousel');
+        var carouselInstances = M.Carousel.init(carouselElems, {
+            fullWidth:true,
+            indicators: true
+        });
+
+    
+
+    var collapsibleElems = document.querySelectorAll('.collapsible');
+    M.Collapsible.init(collapsibleElems);
+});
+   </script>
+<script>
+    // Initialize modal
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
+
+
+    // Function to display selected pastry
+    function displayPastry() {
+        const selectedPastry = document.querySelector('input[name="pastry"]:checked').value;
+        document.getElementById('pastry-response').innerText = `You selected: ${selectedPastry}`;
+    }
+    // Function to handle email subscription form submission
+    function submitEmail(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        document.getElementById('email-response').innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+        document.getElementById('email').value = ''; // Clear the input
+
+
+        // Display modal
+        const modalText = document.getElementById('modal-content-text');
+        modalText.innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+        const modal = M.Modal.getInstance(document.getElementById('modal1'));
+        modal.open();
+    }
+</script>
+
+
 </body>
 </html>
