@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jilly Bean Bakery</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!--first one-->
+<script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("#img1").fadeIn(1000);
+        $("#img2").fadeIn(2000);
+        $("#img3").fadeIn(3000);
+      });
+    });
+  </script>
+
+<!--second one-->
+<script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("#p1").css("color", "red")
+          .slideUp(2000)
+          .slideDown(2000);
+      });
+    });
+    </script>
+
+
+<!--third one-->
+<script>
+    $(document).ready(function(){
+      $("input").focus(function(){
+        $(this).css("background-color", "#f5eef8");
+      });
+      $("input").blur(function(){
+        $(this).css("background-color", "#4a235a");
+      });
+    });
+    </script>
+
+</head>
+<body>
+<!-- Header of the website -->
+<header>
+   <h1>Welcome to Jilly Bean Bakery</h1>
+  
+   <div class="navbar">
+    <a href="index.html">Bakery Home</a>
+    <a href="content.html">Baked Goods</a>
+    <a href="contact.html">About Jill</a>
+    <a href="materialize.html">Materialize</a>
+    <a href="jquery.html">JQuery</a>
+   </div>
+</header>
+
+
+    <!--first one-->
+    <section style="background-color: rgb(255, 255, 174);"
+    <p>What is this weeks new special?</p>
+
+    <button>Click here to see!</button><br><br>
+    
+    <img id="img1" src="images/lemonbar.png" style="display:none; width:150px; border-radius:10px;"></div><br>
+    <img id="img2" src="images/macaroon.png" style="display:none; width:150px; border-radius:10px;"></div><br>
+    <img id="img3" src="images/chocolatecake.png" style="display:none; width:150px; border-radius:10px;"></div><br>
+   </section>
+
+
+
+<!--second one-->
+<section style="background-color: rgb(31, 31, 80); color: white; padding: 10px;">
+    <p id="p1">New recipe book dropping 4/14/25!!</p>
+    <button id="announce">Click me</button>
+  </section>
+
+
+
+<!--third one-->
+<section style="background-color: orchid; padding: 10px;">
+    <label>Name: <input type="text" name="fullname"></label><br><br>
+    <label>Email: <input type="text" name="email"></label>
+  </section>
+
+</body>
+</html>
