@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid p-5 bg-primary text-white text-center">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+  
+
+<div class="container mt-3">
+    <h2>Rate the Treat!</h2>
+    <p>Drag the blue dot to rate the following treat:</p>
+    <form action="/action_page.php">
+      <label for="customRange" class="form-label">Lemon bar</label>
+      <input type="range" class="form-range" id="customRange" name="points" step="10">
+      
+      <button type="submit" class="purple">Submit</button>
+    </form>
+  </div>
+
+  <div class="container mt-3">
+    <h2>Fun fact about the bakery</h2>
+    <p>Find out a secret fact about the best bakery on town!</p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Click to reveal</button>
+    <div id="demo" class="collapse">
+        Jilly Bean Bakery was started with just $83, a hand-me-down hand mixer, and a whole lot of hustle.
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <h2>Apply!</h2>
+    <p>Apply to one of the best hands-on & learning baking experience Ohio has to offer.</p>
+    <div class="alert alert-success">
+      <strong>Success!</strong> You have scheduled a class on Wednesday, May 5th with Jill. 
+    </div>
+    <div class="alert alert-info">
+      <strong>Info!</strong> Don't forget to bring notebook & pen for jotting down tips and tricks.
+    </div>
+
+
+</body>
+</html>
+
